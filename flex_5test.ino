@@ -58,7 +58,7 @@ void loop() {
   Serial.print("  Flex Sensor 5: ");
   Serial.println(sensorValue5);
 
-  //if(sensorValue1==4095 && sensorValue2<4095 && sensorValue3<4095 && sensorValue4<4095 && sensorValue5<4095)
+  if(sensorValue1==4095 && sensorValue2<4095 && sensorValue3<4095 && sensorValue4<4095 && sensorValue5<4095)
   if (SerialBT.hasClient()) {
     // Send a message to the connected Bluetooth app
     SerialBT.println("One");
